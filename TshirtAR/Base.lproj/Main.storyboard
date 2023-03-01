@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TshirtAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="glQ-ig-RrX">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6l6-sA-00i">
+                                <rect key="frame" x="30" y="592" width="333" height="176"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos incorrectos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETk-YW-AFJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" name="Danger"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0XY-zn-hMd" userLabel="correo">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="40"/>
+                                        <color key="backgroundColor" name="background"/>
+                                        <color key="tintColor" name="background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="z8c-V9-Ao4"/>
+                                        </constraints>
+                                        <color key="textColor" name="Primary"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vd4-YY-VQv" userLabel="contrasena">
+                                        <rect key="frame" x="0.0" y="50" width="333" height="40"/>
+                                        <color key="backgroundColor" name="background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="RDb-qc-41i"/>
+                                        </constraints>
+                                        <color key="textColor" name="Primary"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hW1-C4-xmh">
+                                        <rect key="frame" x="0.0" y="100" width="333" height="33"/>
+                                        <color key="tintColor" name="Primary"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Iniciar Sesión" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="iniciarSesion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHu-RZ-ukx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqH-jG-nFs">
+                                        <rect key="frame" x="0.0" y="143" width="333" height="33"/>
+                                        <color key="tintColor" name="Secundary"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Registrarse">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="verRegistro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wB6-dT-wX9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido de nuevo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opQ-g5-Wx8">
+                                <rect key="frame" x="30" y="129" width="333" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uFF-lc-hVh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="glQ-ig-RrX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="605-Qc-1EJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6l6-sA-00i" secondAttribute="bottom" constant="50" id="CDO-Uj-27C"/>
+                            <constraint firstItem="glQ-ig-RrX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G5G-A8-dxS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="opQ-g5-Wx8" secondAttribute="trailing" constant="30" id="GZG-38-vUj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6l6-sA-00i" secondAttribute="trailing" constant="30" id="Mj2-gn-Tq6"/>
+                            <constraint firstItem="glQ-ig-RrX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aeb-0o-R6K"/>
+                            <constraint firstItem="opQ-g5-Wx8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="d2m-HR-g1T"/>
+                            <constraint firstItem="6l6-sA-00i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="h9z-Wi-mMf"/>
+                            <constraint firstAttribute="bottom" secondItem="glQ-ig-RrX" secondAttribute="bottom" id="nq2-3q-3pU"/>
+                            <constraint firstItem="opQ-g5-Wx8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="rxe-m5-F4v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contrasenaText" destination="vd4-YY-VQv" id="KWD-X3-6eE"/>
+                        <outlet property="correoText" destination="0XY-zn-hMd" id="VVm-mJ-94L"/>
+                        <outlet property="errorLabel" destination="ETk-YW-AFJ" id="3xY-JM-faK"/>
+                        <segue destination="8qq-27-cxI" kind="show" identifier="registroSeague" id="nF1-gV-A8X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23.664122137404579" y="4.9295774647887329"/>
+        </scene>
+        <!--RegistroViewController-->
+        <scene sceneID="Zpn-tm-0b3">
+            <objects>
+                <viewController id="8qq-27-cxI" userLabel="RegistroViewController" customClass="RegistroViewController" customModule="TshirtAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fzt-ED-hyG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro Nuevo Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtt-4m-bVt">
+                                <rect key="frame" x="30" y="129" width="333" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a5c-vA-7VZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
+                                <color key="textColor" name="Primary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bn5-65-dQ0">
+                                <rect key="frame" x="30" y="199" width="333" height="343"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Completo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYy-d7-Mej" userLabel="nombre">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="O8S-py-JBx"/>
+                                        </constraints>
+                                        <color key="textColor" name="Primary"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-dg-UaA" userLabel="correo">
+                                        <rect key="frame" x="0.0" y="60" width="333" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="JZm-dE-DK2"/>
+                                        </constraints>
+                                        <color key="textColor" name="Primary"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lxv-cJ-Iid" userLabel="contrasena">
+                                        <rect key="frame" x="0.0" y="120" width="333" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3Lt-U4-WuM"/>
+                                        </constraints>
+                                        <color key="textColor" name="Primary"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="olI-O7-5du" userLabel="confirmarContrasena">
+                                        <rect key="frame" x="0.0" y="180" width="333" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MX4-nn-SxI"/>
+                                        </constraints>
+                                        <color key="textColor" name="Primary"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUr-fz-tQh">
+                                        <rect key="frame" x="0.0" y="240" width="333" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="w2O-41-Fe2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Registrar" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaE-Cv-oFe">
+                                        <rect key="frame" x="0.0" y="310" width="333" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uhb-br-Ljl"/>
+                                        </constraints>
+                                        <color key="tintColor" name="Secundary"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Regresar">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ivA-yZ-zrp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ivA-yZ-zrp" firstAttribute="bottom" secondItem="bn5-65-dQ0" secondAttribute="bottom" constant="100" id="9Yy-cy-N8f"/>
+                            <constraint firstItem="ivA-yZ-zrp" firstAttribute="trailing" secondItem="vtt-4m-bVt" secondAttribute="trailing" constant="30" id="KIb-m3-xRE"/>
+                            <constraint firstItem="bn5-65-dQ0" firstAttribute="leading" secondItem="ivA-yZ-zrp" secondAttribute="leading" constant="30" id="gTc-1u-w26"/>
+                            <constraint firstItem="ivA-yZ-zrp" firstAttribute="trailing" secondItem="bn5-65-dQ0" secondAttribute="trailing" constant="30" id="jiW-FG-Yvz"/>
+                            <constraint firstItem="vtt-4m-bVt" firstAttribute="top" secondItem="ivA-yZ-zrp" secondAttribute="top" constant="70" id="mgV-R3-vnl"/>
+                            <constraint firstItem="bn5-65-dQ0" firstAttribute="top" secondItem="vtt-4m-bVt" secondAttribute="bottom" constant="30" id="r6x-Hc-Tlm"/>
+                            <constraint firstItem="vtt-4m-bVt" firstAttribute="leading" secondItem="ivA-yZ-zrp" secondAttribute="leading" constant="30" id="s6L-v6-3nY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="odV-yP-Gnd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oK7-q9-KGL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="5"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="Primary"/>
+    <resources>
+        <image name="login" width="1170" height="2532"/>
+        <namedColor name="Danger">
+            <color red="0.9882352941176471" green="0.22745098039215686" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.99607843137254903" green="0.28627450980392155" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secundary">
+            <color red="0.96862745098039216" green="0.72549019607843135" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.94901960784313721" green="0.95686274509803926" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
